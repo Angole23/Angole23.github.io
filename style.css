@@ -26,3 +26,5 @@ header .wordmark{font-family:'Hanken Grotesk',Arial,sans-serif;font-size:12px;le
 h1,h2,h3{font-weight:400}h1{letter-spacing:-.065em}.home h1{font-size:14.8vw;line-height:1.15}h2{letter-spacing:-.05em}h3{letter-spacing:-.035em}
 
 @media(min-width:481px) and (max-width:900px){header{height:auto;min-height:100px;padding-top:20px;padding-bottom:20px;flex-wrap:wrap;gap:16px}header .wordmark{width:100%;font-size:11px}header nav,header nav[hidden]{width:100%;justify-content:space-between;gap:12px}header nav a{font-size:11px}}
+
+.project-videos{margin:55px 0 65px;display:grid;gap:28px}.project-videos h2{font-size:clamp(30px,4vw,55px);margin-bottom:10px}.project-videos figure{margin:0}.project-videos video{display:block;width:100%;max-height:80vh;background:#29282b;border-radius:8px}.project-videos figcaption{font-size:12px;text-transform:uppercase;color:#666;margin-top:12px}
