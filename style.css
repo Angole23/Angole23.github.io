@@ -8,6 +8,6 @@
 .gallery-group a{display:block;width:25vw;flex:none}
 .gallery:focus-within .gallery-track,.gallery.paused .gallery-track{animation-play-state:paused}
 .motion-toggle{display:block;margin:0 3vw 12px;padding:6px 0;border:0;border-bottom:1px solid #bbb;background:none;font-size:12px;color:#666}
-@keyframes gallery-drift{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes gallery-drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:650px){.gallery{min-height:390px;padding:35px 0 55px}.gallery-group{gap:9vw;padding-right:9vw}.gallery-group a{width:48vw}.motion-toggle{margin-left:24px}}
 @media(prefers-reduced-motion:reduce){.gallery-track{animation:none}.gallery{overflow-x:auto}.gallery-group[aria-hidden]{display:none}.motion-toggle{display:none}}
