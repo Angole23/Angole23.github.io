@@ -11,3 +11,13 @@
 @keyframes gallery-drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:650px){.gallery{min-height:390px;padding:35px 0 55px}.gallery-group{gap:9vw;padding-right:9vw}.gallery-group a{width:48vw}.motion-toggle{margin-left:24px}}
 @media(prefers-reduced-motion:reduce){.gallery-track{animation:none}.gallery{overflow-x:auto}.gallery-group[aria-hidden]{display:none}.motion-toggle{display:none}}
+
+/* Full navigation on desktop; compact menu on smaller screens. */
+header .wordmark{font-family:'Hanken Grotesk',Arial,sans-serif;font-size:12px;letter-spacing:.035em;line-height:1.4}
+@media(min-width:1001px){
+ header{gap:28px;height:80px}
+ #menu{display:none}
+ header nav,header nav[hidden]{display:flex;position:static;align-items:center;gap:30px;padding:0;box-shadow:none;background:transparent}
+ header nav a{font-family:'Hanken Grotesk',Arial,sans-serif;font-size:12px;letter-spacing:.045em;text-transform:uppercase;margin:0;white-space:nowrap}
+}
+@media(max-width:1000px){header .wordmark{max-width:calc(100% - 55px);font-size:11px}header nav[hidden]{display:none}}
