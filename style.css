@@ -14,13 +14,15 @@
 
 /* Full navigation on desktop; compact menu on smaller screens. */
 header .wordmark{font-family:'Hanken Grotesk',Arial,sans-serif;font-size:12px;letter-spacing:.035em;line-height:1.4}
-@media(min-width:1001px){
+@media(min-width:481px){
  header{gap:28px;height:80px}
  #menu{display:none}
  header nav,header nav[hidden]{display:flex;position:static;align-items:center;gap:30px;padding:0;box-shadow:none;background:transparent}
  header nav a{font-family:'Hanken Grotesk',Arial,sans-serif;font-size:12px;letter-spacing:.045em;text-transform:uppercase;margin:0;white-space:nowrap}
 }
-@media(max-width:1000px){header .wordmark{max-width:calc(100% - 55px);font-size:11px}header nav[hidden]{display:none}}
+@media(max-width:480px){header .wordmark{max-width:calc(100% - 55px);font-size:11px}header nav[hidden]{display:none}}
 
 /* Modern display typography, sized to keep the full name in view. */
 h1,h2,h3{font-weight:400}h1{letter-spacing:-.065em}.home h1{font-size:14.8vw;line-height:1.15}h2{letter-spacing:-.05em}h3{letter-spacing:-.035em}
+
+@media(min-width:481px) and (max-width:900px){header{height:auto;min-height:100px;padding-top:20px;padding-bottom:20px;flex-wrap:wrap;gap:16px}header .wordmark{width:100%;font-size:11px}header nav,header nav[hidden]{width:100%;justify-content:space-between;gap:12px}header nav a{font-size:11px}}
